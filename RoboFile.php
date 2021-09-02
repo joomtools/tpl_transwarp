@@ -52,6 +52,11 @@ class RoboFile extends \Robo\Tasks
 	 */
 	public function headers()
 	{
+		if (!file_exists('jorobo.ini'))
+		{
+			$this->_copy('jorobo.dist.ini', 'jorobo.ini');
+		}
+
 		(new \Joomla\Jorobo\Tasks\CopyrightHeader())->run();
 	}
 
@@ -64,6 +69,11 @@ class RoboFile extends \Robo\Tasks
 	 */
 	public function map($target)
 	{
+		if (!file_exists('jorobo.ini'))
+		{
+			$this->_copy('jorobo.dist.ini', 'jorobo.ini');
+		}
+
 		(new \Joomla\Jorobo\Tasks\Map($target))->run();
 	}
 
@@ -76,6 +86,11 @@ class RoboFile extends \Robo\Tasks
 	 */
 	public function bump()
 	{
+		if (!file_exists('jorobo.ini'))
+		{
+			$this->_copy('jorobo.dist.ini', 'jorobo.ini');
+		}
+
 		(new \Joomla\Jorobo\Tasks\BumpVersion())->run();
 	}
 }

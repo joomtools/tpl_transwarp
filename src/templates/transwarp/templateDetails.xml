@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.8" type="template" client="site" method="upgrade">
-	<name>transwarp</name>
+	<name>Transwarp</name>
 	<version>##VERSION##</version>
 	<creationDate>##DATE##</creationDate>
 	<author>Guido De Gobbis</author>
@@ -8,7 +8,7 @@
 	<authorUrl>https://github.com/JoomTools/tpl_transwarp</authorUrl>
 	<copyright>Copyright (C) ##YEAR## JoomTools</copyright>
 	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
-	<description>Master theme. It is based on YOOtheme's Master2 Warp7 theme framework.</description>
+	<description>Transwarp theme. It is based on YOOtheme's Master2 Warp7 theme framework.</description>
 	<files>
 		<filename>checksums</filename>
 		<filename>apple_touch_icon.png</filename>
